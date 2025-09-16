@@ -4,6 +4,8 @@ import java.util.*;
 
 public class ListA<E> implements List<E> {
 
+    //Создайте аналог списка БЕЗ использования других классов СТАНДАРТНОЙ БИБЛИОТЕКИ
+
     private static final int DEFAULT_CAPACITY = 10;
     private Object[] elements;
     private int size;
@@ -232,8 +234,6 @@ public class ListA<E> implements List<E> {
             }
         };
     }
-
-    // Остальные методы оставлены без реализации, как требуется
 
     @Override
     public boolean containsAll(Collection<?> c) {
