@@ -7,14 +7,14 @@ import java.util.NavigableMap;
 import java.util.NavigableSet;
 import java.util.Comparator;
 
-    /**
-     * Реализация NavigableMap на основе splay-дерева
-     * Splay-дерево - это самобалансирующееся бинарное дерево поиска,
+/**
+ * Реализация NavigableMap на основе splay-дерева
+ * Splay-дерево - это самобалансирующееся бинарное дерево поиска,
      * где после каждого доступа к узлу он перемещается в корень дерева (splay операция)
      * Это обеспечивает локальность доступа: часто используемые элементы находятся ближе к корню
      * Время выполнения: O(log n) амортизированно
-     */
-    public class MySplayMap implements NavigableMap<Integer, String> {
+ */
+public class MySplayMap implements NavigableMap<Integer, String> {
     
     private static class Node {
         Integer key;
